@@ -14,12 +14,12 @@ header, footer, section, aside, main{
         padding: 1em;
 }
 
-
 header, footer{
         color: white;
         background-color:  #1976D2;
         flex-grow: 1;
 }
+
 aside{
         display: flex;
         justify-content: center;
@@ -33,6 +33,7 @@ section{
         flex-grow: 1;
         margin: 0.5em;
 }
+
 main{
         background-color: #2196F3;
         color: white;
@@ -60,6 +61,12 @@ div.row{
 .col{
         display: flex;
         flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  div.row{
+                flex-direction: column;
+        }
 }
 
 </style>
